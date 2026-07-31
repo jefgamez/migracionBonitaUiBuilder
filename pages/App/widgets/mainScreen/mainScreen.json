@@ -142,7 +142,7 @@
       "key": "defaultTab"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [
     {
       "key": "onTabSelected"
