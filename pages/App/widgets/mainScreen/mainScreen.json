@@ -89,6 +89,48 @@
       "version": 1,
       "widgetId": "canvasProcesos",
       "widgetName": "CanvasProcesos"
+    },
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 990,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "displayName": "Canvas",
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "dynamicTriggerPathList": [],
+      "hideCard": true,
+      "isDeprecated": false,
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 150,
+      "parentColumnSpace": 1,
+      "parentId": "mainScreen01",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 792,
+      "shouldScrollContents": false,
+      "tabId": "tabPerfilCliente",
+      "tabName": "PerfilCliente",
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "canvasPerfilCliente",
+      "widgetName": "CanvasPerfilCliente",
+      "children": []
     }
   ],
   "defaultTab": "{{ appsmith.store.selTab}}\n",
@@ -143,6 +185,15 @@
       "label": "Procesos",
       "positioning": "vertical",
       "widgetId": "canvasProcesos"
+    },
+    "tabPerfilCliente": {
+      "id": "tabPerfilCliente",
+      "index": 2,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "PerfilCliente",
+      "positioning": "vertical",
+      "widgetId": "canvasPerfilCliente"
     }
   },
   "topRow": 0,
