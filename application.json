@@ -22,6 +22,10 @@
       "isDefault": true
     },
     {
+      "id": "Procesos",
+      "isDefault": false
+    },
+    {
       "id": "Page1",
       "isDefault": false
     }
