@@ -2,8 +2,8 @@
   "backgroundColor": "none",
   "borderColor": "#e0dede",
   "borderRadius": "0px",
-  "borderWidth": "1",
-  "bottomRow": 68,
+  "borderWidth": "0",
+  "bottomRow": 77,
   "boxShadow": "none",
   "defaultModel": "{{ { procesos: GetProcesos.data || [] } }}",
   "displayName": "Custom",
@@ -34,11 +34,12 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "needsErrorInfo": false,
+  "onInstanciar": "{{storeValue('selTab', tabName);}}",
   "parentColumnSpace": 1,
   "parentId": "canvasProcesos",
   "parentRowSpace": 1,
   "renderMode": "CANVAS",
-  "rightColumn": 49,
+  "rightColumn": 64,
   "shouldScrollContents": true,
   "srcDoc": {
     "css": "* { box-sizing: border-box; }\nhtml, body { margin: 0; height: 100%; min-height: 100vh; font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; background: #F9F9F9; }\n\n.procesos { max-width: 1100px; margin: 0 auto; padding: 26px; }\n\n.procesos__header { margin-bottom: 18px; }\n.procesos__title { font-size: 17px; font-weight: 700; color: #1D2751; }\n.procesos__subtitle { margin-top: 2px; font-size: 12px; color: #4A5568; }\n\n.procesos__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 340px)); gap: 20px; }\n\n.procesos__empty { text-align: center; color: #4A5568; font-size: 12px; padding: 40px 0; }\n\n.proc-card {\n  background: #fff;\n  border: 1px solid #E5E7EB;\n  border-radius: 16px;\n  padding: 22px 22px 18px;\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  box-shadow: rgba(0,0,0,.1) 0px 1px 3px, rgba(0,0,0,.06) 0px 1px 2px;\n}\n\n.proc-card__top { display: flex; align-items: center; justify-content: space-between; }\n\n.proc-card__version {\n  font-size: 10px;\n  font-weight: 600;\n  color: #9CA3AF;\n  background: #F3F4F6;\n  padding: 3px 9px;\n  border-radius: 999px;\n}\n\n.proc-card__name { font-weight: 700; font-size: 13px; color: #14327D; line-height: 1.3; }\n\n.proc-card__id { font-size: 9.5px; color: #9CA3AF; font-family: monospace; margin-top: 6px; }\n\n.proc-card__footer {\n  display: flex;\n  justify-content: flex-end;\n  margin-top: 8px;\n  padding-top: 14px;\n  border-top: 1px solid #F1F3F7;\n}\n\n.proc-card__btn {\n  display: inline-flex;\n  align-items: center;\n  gap: 7px;\n  padding: 8px 18px;\n  border: none;\n  border-radius: 9px;\n  background: linear-gradient(90deg, #1E5FA8 0%, #2E7BD6 100%);\n  color: #fff;\n  font-family: inherit;\n  font-size: 11px;\n  font-weight: 600;\n  cursor: pointer;\n}\n.proc-card__btn:disabled {\n  background: #E5E7EB;\n  color: #9CA3AF;\n  cursor: not-allowed;\n}\n",
@@ -58,6 +59,5 @@
   },
   "version": 1,
   "widgetId": "mcprocesos01",
-  "widgetName": "procesosContenido",
-  "onInstanciar": "{{storeValue('selTab', tabName);}}"
+  "widgetName": "procesosContenido"
 }

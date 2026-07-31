@@ -13,7 +13,10 @@
         "apiContentType": "application/json"
       },
       "headers": [
-        { "key": "Content-Type", "value": "application/json" }
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
       ],
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
@@ -35,8 +38,12 @@
       "pluginId": "bonita-api-plugin"
     },
     "dynamicBindingPathList": [
-      { "key": "path" },
-      { "key": "body" }
+      {
+        "key": "path"
+      },
+      {
+        "key": "body"
+      }
     ],
     "executeOnLoad": false,
     "name": "StartProcessPerfilCliente",

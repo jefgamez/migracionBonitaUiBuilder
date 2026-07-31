@@ -1,16 +1,16 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "backgroundColor": "#FFFFFF",
+  "backgroundColor": "#f9f9f9",
   "borderColor": "#E0DEDE",
   "borderRadius": "0.375rem",
-  "borderWidth": "1",
-  "bottomRow": 68,
+  "borderWidth": "0",
+  "bottomRow": 79,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 990,
+      "bottomRow": 790,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -51,7 +51,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 990,
+      "bottomRow": 790,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -92,7 +92,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 990,
+      "bottomRow": 790,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -129,8 +129,7 @@
       "type": "CANVAS_WIDGET",
       "version": 1,
       "widgetId": "canvasPerfilCliente",
-      "widgetName": "CanvasPerfilCliente",
-      "children": []
+      "widgetName": "CanvasPerfilCliente"
     }
   ],
   "defaultTab": "{{ appsmith.store.selTab}}\n",
@@ -177,15 +176,6 @@
       "positioning": "vertical",
       "widgetId": "canvasBandeja"
     },
-    "tabProcesos": {
-      "id": "tabProcesos",
-      "index": 1,
-      "isDuplicateLabel": false,
-      "isVisible": true,
-      "label": "Procesos",
-      "positioning": "vertical",
-      "widgetId": "canvasProcesos"
-    },
     "tabPerfilCliente": {
       "id": "tabPerfilCliente",
       "index": 2,
@@ -194,6 +184,15 @@
       "label": "PerfilCliente",
       "positioning": "vertical",
       "widgetId": "canvasPerfilCliente"
+    },
+    "tabProcesos": {
+      "id": "tabProcesos",
+      "index": 1,
+      "isDuplicateLabel": false,
+      "isVisible": true,
+      "label": "Procesos",
+      "positioning": "vertical",
+      "widgetId": "canvasProcesos"
     }
   },
   "topRow": 0,

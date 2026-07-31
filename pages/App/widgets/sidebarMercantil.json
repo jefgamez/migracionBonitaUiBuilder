@@ -3,7 +3,7 @@
   "borderColor": "#e0dede",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 68,
+  "bottomRow": 79,
   "boxShadow": "none",
   "defaultModel": "{{ { activeTab: appsmith.store.selTab, pendingTaskCount: (appsmith.store.tareasUnicas || []).length } }}",
   "displayName": "Custom",
