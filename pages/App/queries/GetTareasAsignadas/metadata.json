@@ -16,18 +16,13 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/bpm/humanTask",
+      "path": "/bpm/humanTask?p=0&c=50&f=state%3Dready&f=assigned_id%3D{{GetSesion.data.user_id}}",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [
-        { "key": "p", "value": "0" },
-        { "key": "c", "value": "50" },
-        { "key": "f", "value": "state=ready" },
-        { "key": "f", "value": "assigned_id={{GetSesion.data.user_id}}" }
-      ],
+      "queryParameters": [],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -38,7 +33,7 @@
       "pluginId": "bonita-api-plugin"
     },
     "dynamicBindingPathList": [
-      { "key": "queryParameters[3].value" }
+      { "key": "path" }
     ],
     "executeOnLoad": true,
     "name": "GetTareasAsignadas",

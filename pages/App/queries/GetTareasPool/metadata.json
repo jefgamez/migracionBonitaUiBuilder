@@ -16,17 +16,13 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/bpm/humanTask",
+      "path": "/bpm/humanTask?p=0&c=50&f=state%3Dready",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [
-        { "key": "p", "value": "0" },
-        { "key": "c", "value": "50" },
-        { "key": "f", "value": "state=ready" }
-      ],
+      "queryParameters": [],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
