@@ -35,6 +35,8 @@
   "minDynamicHeight": 4,
   "needsErrorInfo": false,
   "onInstanciar": "{{storeValue('selTab', tabName);}}",
+  "originalBottomRow": 77,
+  "originalTopRow": 0,
   "parentColumnSpace": 1,
   "parentId": "canvasProcesos",
   "parentRowSpace": 1,
