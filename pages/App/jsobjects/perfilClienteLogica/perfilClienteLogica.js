@@ -52,9 +52,15 @@ export default {
 			const processId = this.resolverProcessId();
 			if (!processId) throw new Error("No se encontró el proceso CreacionCuentaAhorros habilitado.");
 			const contrato = this.buildContract(form);
+			// OJO: no hacer JSON.stringify aquí — el body de la query ya es
+			// {{this.params.contrato}} dentro de un campo de texto, así que
+			// Appsmith lo serializa una vez al armar el request. Si además
+			// se serializa acá, Bonita recibe el JSON envuelto en comillas
+			// como si fuera un string y Jackson falla con
+			// MismatchedInputException (esperaba un mapa, llegó un String).
 			const result = await StartProcessPerfilCliente.run({
 				processId,
-				contrato: JSON.stringify(contrato),
+				contrato,
 			});
 			await storeValue("envioResultado", { caseId: result && result.caseId ? result.caseId : (result && result.id) }, true);
 		} catch (e) {
