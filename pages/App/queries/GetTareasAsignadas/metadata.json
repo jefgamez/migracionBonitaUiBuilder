@@ -37,7 +37,7 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "GetTareasAsignadas",
     "pageId": "App",
     "userSetOnLoad": true

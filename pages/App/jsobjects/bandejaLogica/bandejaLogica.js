@@ -42,13 +42,20 @@ export default {
 	},
 
 	/**
-	 * Corre ambas queries, combina el resultado YA resuelto (no depende de
-	 * que Appsmith reevalúe .data reactivamente) y lo guarda en
+	 * Corre GetSesion PRIMERO y espera a que resuelva antes de disparar
+	 * GetTareasAsignadas/GetTareasPool — GetTareasAsignadas usa el binding
+	 * {{GetSesion.data.user_id}} en su path, y si se ejecuta en paralelo sin
+	 * esperar a GetSesion (como hacía antes con Promise.all de las 3), ese
+	 * binding se resuelve vacío y Bonita recibe literalmente
+	 * "assigned_id=null", lo que hace fallar la búsqueda en el motor con
+	 * NumberFormatException (intenta parsear "null" como Long). Luego
+	 * combina el resultado YA resuelto y lo guarda en
 	 * appsmith.store.tareasUnicas — única fuente de verdad que leen tanto
 	 * el sidebar (badge de contador) como el widget de la bandeja (lista +
 	 * KPIs), sin duplicar la lógica de merge en dos bindings distintos.
 	 */
 	async recargarBandeja() {
+		await GetSesion.run();
 		await Promise.all([GetTareasAsignadas.run(), GetTareasPool.run()]);
 		// Se lee .data DESPUÉS del await (no el valor de retorno de .run()) —
 		// mismo patrón que pageLoad.js de referencia (getRoleUserName.run()

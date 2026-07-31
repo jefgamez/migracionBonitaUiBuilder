@@ -33,7 +33,7 @@
       "pluginId": "bonita-api-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "GetTareasPool",
     "pageId": "App",
     "userSetOnLoad": true
