@@ -33,7 +33,9 @@
       "pluginId": "bonita-api-plugin"
     },
     "dynamicBindingPathList": [
-      { "key": "path" }
+      {
+        "key": "path"
+      }
     ],
     "executeOnLoad": true,
     "name": "GetTareasAsignadas",

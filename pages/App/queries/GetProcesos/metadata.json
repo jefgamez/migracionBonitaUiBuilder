@@ -23,10 +23,22 @@
         }
       ],
       "queryParameters": [
-        { "key": "p", "value": "0" },
-        { "key": "c", "value": "50" },
-        { "key": "f", "value": "activationState=ENABLED" },
-        { "key": "o", "value": "displayName ASC" }
+        {
+          "key": "p",
+          "value": "0"
+        },
+        {
+          "key": "c",
+          "value": "50"
+        },
+        {
+          "key": "f",
+          "value": "activationState=ENABLED"
+        },
+        {
+          "key": "o",
+          "value": "displayName ASC"
+        }
       ],
       "timeoutInMillisecond": 10000
     },
