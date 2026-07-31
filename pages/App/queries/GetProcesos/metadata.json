@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6a6be99fdc175308ee8be807_a1a1a1a1-0001-4001-8001-000000000001",
-  "id": "BandejaTareas_GetSesion",
+  "gitSyncId": "6a6be99fdc175308ee8be807_a1a1a1a1-0008-4008-8008-000000000008",
+  "id": "App_GetProcesos",
   "pluginId": "bonita-api-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -16,13 +16,18 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/system/session/unusedId",
+      "path": "/bpm/process",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        { "key": "p", "value": "0" },
+        { "key": "c", "value": "50" },
+        { "key": "f", "value": "activationState=ENABLED" },
+        { "key": "o", "value": "displayName ASC" }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -34,8 +39,8 @@
     },
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "GetSesion",
-    "pageId": "BandejaTareas",
+    "name": "GetProcesos",
+    "pageId": "App",
     "userSetOnLoad": true
   }
 }

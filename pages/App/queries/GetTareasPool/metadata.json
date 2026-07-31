@@ -1,6 +1,6 @@
 {
   "gitSyncId": "6a6be99fdc175308ee8be807_a1a1a1a1-0003-4003-8003-000000000003",
-  "id": "BandejaTareas_GetTareasPool",
+  "id": "App_GetTareasPool",
   "pluginId": "bonita-api-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -39,7 +39,7 @@
     "dynamicBindingPathList": [],
     "executeOnLoad": true,
     "name": "GetTareasPool",
-    "pageId": "BandejaTareas",
+    "pageId": "App",
     "userSetOnLoad": true
   }
 }

@@ -4,7 +4,9 @@
     "appPositioning": {
       "type": "FIXED"
     },
-    "navigationSetting": {},
+    "navigationSetting": {
+      "showNavbar": false
+    },
     "themeSetting": {
       "appMaxWidth": "LARGE",
       "density": 1.0,
@@ -18,12 +20,8 @@
   "icon": "football",
   "pages": [
     {
-      "id": "BandejaTareas",
+      "id": "App",
       "isDefault": true
-    },
-    {
-      "id": "Procesos",
-      "isDefault": false
     },
     {
       "id": "Page1",
