@@ -33,7 +33,7 @@
       "pluginId": "bonita-api-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "GetPaisesParametrica",
     "pageId": "App",
     "userSetOnLoad": true
