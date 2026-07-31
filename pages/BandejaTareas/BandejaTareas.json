@@ -1,0 +1,176 @@
+{
+  "gitSyncId": "6a6be99fdc175308ee8be807_a1a1a1a1-0007-4007-8007-000000000007",
+  "unpublishedPage": {
+    "customSlug": "",
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 5000,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "dynamicTriggerPathList": [],
+          "leftColumn": 0,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "snapRows": 124,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 91,
+          "widgetId": "0",
+          "widgetName": "MainContainer",
+          "children": [
+            {
+              "backgroundColor": "none",
+              "borderColor": "#e0dede",
+              "borderRadius": "0px",
+              "borderWidth": "1",
+              "bottomRow": 124,
+              "boxShadow": "none",
+              "defaultModel": "{{ { activePage: appsmith.store.activePage, pendingTaskCount: bandejaLogica.kpiTotal() } }}",
+              "displayName": "Custom",
+              "dynamicBindingPathList": [
+                {
+                  "key": "theme"
+                },
+                {
+                  "key": "defaultModel"
+                }
+              ],
+              "dynamicHeight": "FIXED",
+              "dynamicPropertyPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onNavigate"
+                },
+                {
+                  "key": "onLogout"
+                }
+              ],
+              "events": [
+                "onNavigate",
+                "onLogout"
+              ],
+              "hideCard": false,
+              "isCanvas": false,
+              "isDeprecated": false,
+              "isLoading": false,
+              "isVisible": true,
+              "leftColumn": 0,
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4,
+              "needsErrorInfo": false,
+              "onNavigate": "{{storeValue('activePage', this.params.pageName).then(() => navigateTo(this.params.pageName));}}",
+              "onLogout": "{{LiberarSesionUI.run ? LiberarSesionUI.run() : undefined;}}",
+              "parentColumnSpace": 1,
+              "parentId": "0",
+              "parentRowSpace": 1,
+              "renderMode": "CANVAS",
+              "rightColumn": 15,
+              "shouldScrollContents": true,
+              "srcDoc": {
+                "css": "/* Sidebar Mercantil — degradado azul institucional, portado de Sidebar.svelte / Sidebar.tsx */\n* { box-sizing: border-box; }\nbody { margin: 0; font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; }\n\n.mc-sidebar {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  background: linear-gradient(180deg, #1E5FA8 0%, #14327D 70%, #0D2559 100%);\n  color: #fff;\n  overflow-y: auto;\n}\n\n.mc-sidebar__logo {\n  padding: 20px 22px 15px;\n  border-bottom: 1px solid rgba(255,255,255,0.1);\n}\n\n.mc-sidebar__brand {\n  font-size: 14px;\n  font-weight: 700;\n  letter-spacing: 0.4px;\n  color: #fff;\n}\n\n.mc-sidebar__brand-sub {\n  margin-top: 2px;\n  font-size: 11.5px;\n  color: rgba(255,255,255,0.65);\n}\n\n.mc-sidebar__section-label {\n  padding: 14px 14px 6px 22px;\n  font-size: 10px;\n  font-weight: 700;\n  letter-spacing: 1.4px;\n  text-transform: uppercase;\n  color: rgba(255,255,255,0.45);\n}\n\n.mc-sidebar__nav {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  padding: 0 14px;\n  flex: 1;\n}\n\n.mc-nav-item {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 10px;\n  padding: 11px 14px;\n  border-radius: 9px;\n  border-left: 3px solid transparent;\n  font-size: 14px;\n  font-weight: 500;\n  color: rgba(255,255,255,0.75);\n  cursor: pointer;\n  background: none;\n  border-top: none;\n  border-right: none;\n  border-bottom: none;\n  width: 100%;\n  text-align: left;\n  transition: background-color 0.15s, color 0.15s;\n  user-select: none;\n}\n\n.mc-nav-item:hover {\n  background: rgba(255,255,255,0.1);\n  color: #fff;\n}\n\n.mc-nav-item.active {\n  background: rgba(255,255,255,0.15);\n  color: #fff;\n  font-weight: 600;\n  border-left-color: #FFBE00;\n}\n\n.mc-nav-item__label {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n}\n\n.mc-nav-item__badge {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  min-width: 20px;\n  height: 20px;\n  padding: 0 6px;\n  border-radius: 999px;\n  background: #D6202A;\n  font-size: 10.5px;\n  font-weight: 700;\n  color: #fff;\n}\n\n.mc-sidebar__footer {\n  margin-top: auto;\n  padding: 10px 14px 16px;\n  border-top: 1px solid rgba(255,255,255,0.1);\n}\n\n.mc-sidebar__logout {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  width: 100%;\n  padding: 11px 14px;\n  border: none;\n  border-radius: 9px;\n  background: none;\n  color: rgba(255,255,255,0.85);\n  font-size: 12.5px;\n  font-weight: 600;\n  font-family: inherit;\n  cursor: pointer;\n  transition: background-color 0.15s;\n}\n\n.mc-sidebar__logout:hover {\n  background: rgba(255,255,255,0.12);\n}\n",
+                "html": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap\" rel=\"stylesheet\">\n\n<div class=\"mc-sidebar\">\n  <div class=\"mc-sidebar__logo\">\n    <div class=\"mc-sidebar__brand\">SOLICITUD DE PRODUCTO</div>\n    <div class=\"mc-sidebar__brand-sub\">BPM · Persona Natural</div>\n  </div>\n\n  <div class=\"mc-sidebar__section-label\">OPERACIÓN</div>\n\n  <nav class=\"mc-sidebar__nav\" id=\"mc-nav\"></nav>\n\n  <div class=\"mc-sidebar__footer\">\n    <button type=\"button\" class=\"mc-sidebar__logout\" id=\"mc-logout\">Cerrar sesión</button>\n  </div>\n</div>\n",
+                "js": "/* Sidebar Mercantil (Custom Widget) — replica Sidebar.tsx/Sidebar.svelte:\n * ítems fijos de navegación, badge de contador en \"Bandeja de tareas\",\n * navegación vía appsmith.triggerEvent('onNavigate', {pageName}) — el mismo\n * mecanismo que ya usa navMenu.json en el proyecto APAP de referencia. */\n\nconst ITEMS = [\n  { label: \"Bandeja de tareas\", pageName: \"BandejaTareas\", badgeKey: \"pendingTaskCount\" },\n  { label: \"Procesos\", pageName: \"Procesos\" },\n  { label: \"Casos\", pageName: \"Casos\" },\n  { label: \"Monitorización\", pageName: \"Monitorizacion\" }\n];\n\nappsmith.onReady(() => {\n  render(appsmith.model);\n  if (typeof appsmith.onModelChange === \"function\") {\n    appsmith.onModelChange((m) => render(m));\n  }\n});\n\nfunction render(model) {\n  const nav = document.getElementById(\"mc-nav\");\n  if (!nav) return;\n  nav.innerHTML = \"\";\n\n  const activePage = model && model.activePage;\n  const pendingTaskCount = (model && model.pendingTaskCount) || 0;\n\n  ITEMS.forEach((item) => {\n    const btn = document.createElement(\"button\");\n    btn.type = \"button\";\n    btn.className = \"mc-nav-item\" + (item.pageName === activePage ? \" active\" : \"\");\n\n    const label = document.createElement(\"span\");\n    label.className = \"mc-nav-item__label\";\n    label.textContent = item.label;\n    btn.appendChild(label);\n\n    if (item.badgeKey && pendingTaskCount > 0) {\n      const badge = document.createElement(\"span\");\n      badge.className = \"mc-nav-item__badge\";\n      badge.textContent = String(pendingTaskCount);\n      btn.appendChild(badge);\n    }\n\n    btn.addEventListener(\"click\", () => {\n      appsmith.triggerEvent(\"onNavigate\", { pageName: item.pageName });\n    });\n\n    nav.appendChild(btn);\n  });\n}\n\ndocument.getElementById(\"mc-logout\") && document.getElementById(\"mc-logout\").addEventListener(\"click\", () => {\n  appsmith.triggerEvent(\"onLogout\", {});\n});\n"
+              },
+              "tags": [
+                "Display"
+              ],
+              "theme": "{{appsmith.theme}}",
+              "topRow": 0,
+              "type": "CUSTOM_WIDGET",
+              "uncompiledSrcDoc": {
+                "css": "/* Sidebar Mercantil — degradado azul institucional, portado de Sidebar.svelte / Sidebar.tsx */\n* { box-sizing: border-box; }\nbody { margin: 0; font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; }\n\n.mc-sidebar {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  background: linear-gradient(180deg, #1E5FA8 0%, #14327D 70%, #0D2559 100%);\n  color: #fff;\n  overflow-y: auto;\n}\n\n.mc-sidebar__logo {\n  padding: 20px 22px 15px;\n  border-bottom: 1px solid rgba(255,255,255,0.1);\n}\n\n.mc-sidebar__brand {\n  font-size: 14px;\n  font-weight: 700;\n  letter-spacing: 0.4px;\n  color: #fff;\n}\n\n.mc-sidebar__brand-sub {\n  margin-top: 2px;\n  font-size: 11.5px;\n  color: rgba(255,255,255,0.65);\n}\n\n.mc-sidebar__section-label {\n  padding: 14px 14px 6px 22px;\n  font-size: 10px;\n  font-weight: 700;\n  letter-spacing: 1.4px;\n  text-transform: uppercase;\n  color: rgba(255,255,255,0.45);\n}\n\n.mc-sidebar__nav {\n  display: flex;\n  flex-direction: column;\n  gap: 2px;\n  padding: 0 14px;\n  flex: 1;\n}\n\n.mc-nav-item {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 10px;\n  padding: 11px 14px;\n  border-radius: 9px;\n  border-left: 3px solid transparent;\n  font-size: 14px;\n  font-weight: 500;\n  color: rgba(255,255,255,0.75);\n  cursor: pointer;\n  background: none;\n  border-top: none;\n  border-right: none;\n  border-bottom: none;\n  width: 100%;\n  text-align: left;\n  transition: background-color 0.15s, color 0.15s;\n  user-select: none;\n}\n\n.mc-nav-item:hover {\n  background: rgba(255,255,255,0.1);\n  color: #fff;\n}\n\n.mc-nav-item.active {\n  background: rgba(255,255,255,0.15);\n  color: #fff;\n  font-weight: 600;\n  border-left-color: #FFBE00;\n}\n\n.mc-nav-item__label {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n}\n\n.mc-nav-item__badge {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  min-width: 20px;\n  height: 20px;\n  padding: 0 6px;\n  border-radius: 999px;\n  background: #D6202A;\n  font-size: 10.5px;\n  font-weight: 700;\n  color: #fff;\n}\n\n.mc-sidebar__footer {\n  margin-top: auto;\n  padding: 10px 14px 16px;\n  border-top: 1px solid rgba(255,255,255,0.1);\n}\n\n.mc-sidebar__logout {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n  width: 100%;\n  padding: 11px 14px;\n  border: none;\n  border-radius: 9px;\n  background: none;\n  color: rgba(255,255,255,0.85);\n  font-size: 12.5px;\n  font-weight: 600;\n  font-family: inherit;\n  cursor: pointer;\n  transition: background-color 0.15s;\n}\n\n.mc-sidebar__logout:hover {\n  background: rgba(255,255,255,0.12);\n}\n",
+                "html": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap\" rel=\"stylesheet\">\n\n<div class=\"mc-sidebar\">\n  <div class=\"mc-sidebar__logo\">\n    <div class=\"mc-sidebar__brand\">SOLICITUD DE PRODUCTO</div>\n    <div class=\"mc-sidebar__brand-sub\">BPM · Persona Natural</div>\n  </div>\n\n  <div class=\"mc-sidebar__section-label\">OPERACIÓN</div>\n\n  <nav class=\"mc-sidebar__nav\" id=\"mc-nav\"></nav>\n\n  <div class=\"mc-sidebar__footer\">\n    <button type=\"button\" class=\"mc-sidebar__logout\" id=\"mc-logout\">Cerrar sesión</button>\n  </div>\n</div>\n",
+                "js": "/* Sidebar Mercantil (Custom Widget) — replica Sidebar.tsx/Sidebar.svelte:\n * ítems fijos de navegación, badge de contador en \"Bandeja de tareas\",\n * navegación vía appsmith.triggerEvent('onNavigate', {pageName}) — el mismo\n * mecanismo que ya usa navMenu.json en el proyecto APAP de referencia. */\n\nconst ITEMS = [\n  { label: \"Bandeja de tareas\", pageName: \"BandejaTareas\", badgeKey: \"pendingTaskCount\" },\n  { label: \"Procesos\", pageName: \"Procesos\" },\n  { label: \"Casos\", pageName: \"Casos\" },\n  { label: \"Monitorización\", pageName: \"Monitorizacion\" }\n];\n\nappsmith.onReady(() => {\n  render(appsmith.model);\n  if (typeof appsmith.onModelChange === \"function\") {\n    appsmith.onModelChange((m) => render(m));\n  }\n});\n\nfunction render(model) {\n  const nav = document.getElementById(\"mc-nav\");\n  if (!nav) return;\n  nav.innerHTML = \"\";\n\n  const activePage = model && model.activePage;\n  const pendingTaskCount = (model && model.pendingTaskCount) || 0;\n\n  ITEMS.forEach((item) => {\n    const btn = document.createElement(\"button\");\n    btn.type = \"button\";\n    btn.className = \"mc-nav-item\" + (item.pageName === activePage ? \" active\" : \"\");\n\n    const label = document.createElement(\"span\");\n    label.className = \"mc-nav-item__label\";\n    label.textContent = item.label;\n    btn.appendChild(label);\n\n    if (item.badgeKey && pendingTaskCount > 0) {\n      const badge = document.createElement(\"span\");\n      badge.className = \"mc-nav-item__badge\";\n      badge.textContent = String(pendingTaskCount);\n      btn.appendChild(badge);\n    }\n\n    btn.addEventListener(\"click\", () => {\n      appsmith.triggerEvent(\"onNavigate\", { pageName: item.pageName });\n    });\n\n    nav.appendChild(btn);\n  });\n}\n\ndocument.getElementById(\"mc-logout\") && document.getElementById(\"mc-logout\").addEventListener(\"click\", () => {\n  appsmith.triggerEvent(\"onLogout\", {});\n});\n"
+              },
+              "version": 1,
+              "widgetId": "mcsidebar01",
+              "widgetName": "sidebarMercantil"
+            },
+            {
+              "backgroundColor": "none",
+              "borderColor": "#e0dede",
+              "borderRadius": "0px",
+              "borderWidth": "1",
+              "bottomRow": 124,
+              "boxShadow": "none",
+              "defaultModel": "{{ { tareas: bandejaLogica.tareasUnicas(), userId: GetSesion.data ? GetSesion.data.user_id : null } }}",
+              "displayName": "Custom",
+              "dynamicBindingPathList": [
+                {
+                  "key": "theme"
+                },
+                {
+                  "key": "defaultModel"
+                }
+              ],
+              "dynamicHeight": "FIXED",
+              "dynamicPropertyPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onAbrirTarea"
+                },
+                {
+                  "key": "onTomar"
+                },
+                {
+                  "key": "onLiberar"
+                }
+              ],
+              "events": [
+                "onAbrirTarea",
+                "onTomar",
+                "onLiberar"
+              ],
+              "hideCard": false,
+              "isCanvas": false,
+              "isDeprecated": false,
+              "isLoading": false,
+              "isVisible": true,
+              "leftColumn": 15,
+              "maxDynamicHeight": 9000,
+              "minDynamicHeight": 4,
+              "needsErrorInfo": false,
+              "onAbrirTarea": "{{navigateTo('SolicitudProducto', {taskId: this.params.taskId});}}",
+              "onTomar": "{{bandejaLogica.tomar(this.params.taskId);}}",
+              "onLiberar": "{{bandejaLogica.liberar(this.params.taskId);}}",
+              "parentColumnSpace": 1,
+              "parentId": "0",
+              "parentRowSpace": 1,
+              "renderMode": "CANVAS",
+              "rightColumn": 64,
+              "shouldScrollContents": true,
+              "srcDoc": {
+                "css": "* { box-sizing: border-box; }\nbody { margin: 0; font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; background: #F9F9F9; }\n\n.bandeja { max-width: 1120px; margin: 0 auto; padding: 26px; }\n\n.bandeja__header { margin-bottom: 18px; }\n.bandeja__title { font-size: 17px; font-weight: 700; color: #1D2751; }\n.bandeja__subtitle { margin-top: 2px; font-size: 12px; color: #4A5568; }\n\n.bandeja__kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 260px)); gap: 14px; margin-bottom: 22px; }\n\n.kpi-card {\n  background: #fff;\n  border: 1px solid #E5E7EB;\n  border-left: 4px solid transparent;\n  border-radius: 14px;\n  box-shadow: rgba(0,0,0,.1) 0px 1px 3px, rgba(0,0,0,.06) 0px 1px 2px;\n  padding: 18px 20px;\n}\n.kpi-card--total { border-left-color: #1E5FA8; }\n.kpi-card--alta { border-left-color: #F4880A; }\n\n.kpi-card__value { font-size: 28px; font-weight: 700; line-height: 1; }\n.kpi-card--total .kpi-card__value { color: #14327D; }\n.kpi-card--alta .kpi-card__value { color: #E06A00; }\n.kpi-card__label { margin-top: 4px; font-size: 10.5px; color: #4A5568; font-weight: 500; }\n\n.bandeja__list-title { font-weight: 600; font-size: 13px; color: #1D2751; margin-bottom: 12px; }\n\n.bandeja__list { display: flex; flex-direction: column; gap: 12px; }\n\n.bandeja__empty { color: #4A5568; font-size: 12px; padding: 32px 0; text-align: center; }\n\n.tarea-card {\n  display: flex;\n  background: #fff;\n  border: 1px solid #E5E7EB;\n  border-radius: 14px;\n  box-shadow: rgba(0,0,0,.1) 0px 1px 3px, rgba(0,0,0,.06) 0px 1px 2px;\n  overflow: hidden;\n}\n\n.tarea-card__body { flex: 1; padding: 16px 18px; min-width: 0; }\n\n.tarea-card__tags { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; flex-wrap: wrap; }\n\n.tarea-card__tag {\n  font-weight: 700;\n  font-size: 8.5px;\n  letter-spacing: .5px;\n  color: #14327D;\n  background: rgba(30,95,168,.1);\n  padding: 3px 8px;\n  border-radius: 999px;\n  white-space: nowrap;\n}\n\n.tarea-card__name { font-weight: 600; font-size: 14.5px; color: #1D2751; }\n\n.tarea-card__caso { font-size: 10.5px; color: #9CA3AF; margin-top: 2px; }\n\n.tarea-card__side {\n  width: 190px;\n  flex-shrink: 0;\n  border-left: 1px solid #E5E7EB;\n  padding: 16px 18px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-end;\n  gap: 12px;\n}\n\n.tarea-card__prioridad {\n  font-size: 9.5px;\n  font-weight: 700;\n  padding: 3px 10px;\n  border-radius: 999px;\n  background: #E8F0FE;\n  color: #2557A7;\n}\n.tarea-card__prioridad--alta { background: #FCECEC; color: #D6202A; }\n\n.tarea-card__btn {\n  background: linear-gradient(90deg, #1E5FA8 0%, #2E7BD6 100%);\n  color: #fff;\n  border: none;\n  border-radius: 999px;\n  padding: 8px 18px;\n  font-family: inherit;\n  font-size: 11px;\n  font-weight: 600;\n  cursor: pointer;\n}\n.tarea-card__btn:disabled { opacity: .4; cursor: not-allowed; }\n\n.tarea-card__btn--ghost {\n  background: #fff;\n  color: #14327D;\n  border: 1.5px solid #6FA3DC;\n}\n",
+                "html": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap\" rel=\"stylesheet\">\n\n<div class=\"bandeja\">\n  <div class=\"bandeja__header\">\n    <div class=\"bandeja__title\">Bandeja de tareas</div>\n    <div class=\"bandeja__subtitle\">Tareas de intervención humana asignadas a tu rol</div>\n  </div>\n\n  <div class=\"bandeja__kpis\">\n    <div class=\"kpi-card kpi-card--total\">\n      <div class=\"kpi-card__value\" id=\"kpi-total\">—</div>\n      <div class=\"kpi-card__label\">Total bandeja de entrada</div>\n    </div>\n    <div class=\"kpi-card kpi-card--alta\">\n      <div class=\"kpi-card__value\" id=\"kpi-alta\">—</div>\n      <div class=\"kpi-card__label\">Prioridad alta</div>\n    </div>\n  </div>\n\n  <div class=\"bandeja__list-title\">Mis tareas asignadas</div>\n  <div class=\"bandeja__list\" id=\"bandeja-list\"></div>\n  <div class=\"bandeja__empty\" id=\"bandeja-empty\" style=\"display:none\">No hay tareas asignadas en este momento.</div>\n</div>\n",
+                "js": "/* Bandeja de tareas (Custom Widget). model = { tareas: [...], userId } que\n * el layout de la página arma con bandejaLogica.tareasUnicas() +\n * bandejaLogica.esMia(t) + GetSesion.data.user_id. Las acciones Tomar/\n * Liberar/Abrir se disparan como eventos hacia el editor (igual que el\n * sidebar), donde bandejaLogica.tomar/liberar ya invocan las queries reales. */\n\nfunction tipoTag(nombre) {\n  if (!nombre) return \"TAREA\";\n  const n = nombre.toLowerCase();\n  if (n.includes(\"vip\") || n.includes(\"excepci\")) return \"REVISIÓN VIP\";\n  if (n.includes(\"gesti\") && n.includes(\"manual\")) return \"GESTIÓN MANUAL\";\n  if (n.includes(\"solicitud\") && n.includes(\"producto\")) return \"SOLICITUD DE PRODUCTO\";\n  if (n.includes(\"solicitud\") && n.includes(\"informaci\")) return \"SOLICITUD DE INFORMACIÓN\";\n  return \"TAREA\";\n}\n\nappsmith.onReady(() => {\n  render(appsmith.model);\n  if (typeof appsmith.onModelChange === \"function\") {\n    appsmith.onModelChange((m) => render(m));\n  }\n});\n\nfunction render(model) {\n  const tareas = (model && model.tareas) || [];\n  const userId = model && model.userId ? String(model.userId) : null;\n\n  const total = tareas.length;\n  const alta = tareas.filter((t) => t.priority === \"high\" || t.priority === \"highest\").length;\n\n  const kpiTotal = document.getElementById(\"kpi-total\");\n  const kpiAlta = document.getElementById(\"kpi-alta\");\n  if (kpiTotal) kpiTotal.textContent = String(total);\n  if (kpiAlta) kpiAlta.textContent = String(alta);\n\n  const list = document.getElementById(\"bandeja-list\");\n  const empty = document.getElementById(\"bandeja-empty\");\n  if (!list || !empty) return;\n\n  list.innerHTML = \"\";\n\n  if (tareas.length === 0) {\n    empty.style.display = \"block\";\n    return;\n  }\n  empty.style.display = \"none\";\n\n  tareas.forEach((t) => {\n    const mia = userId && String(t.assigned_id) === userId;\n\n    const card = document.createElement(\"div\");\n    card.className = \"tarea-card\";\n\n    const body = document.createElement(\"div\");\n    body.className = \"tarea-card__body\";\n\n    const tags = document.createElement(\"div\");\n    tags.className = \"tarea-card__tags\";\n    const tag = document.createElement(\"span\");\n    tag.className = \"tarea-card__tag\";\n    tag.textContent = tipoTag(t.displayName);\n    tags.appendChild(tag);\n    body.appendChild(tags);\n\n    const name = document.createElement(\"div\");\n    name.className = \"tarea-card__name\";\n    name.textContent = t.displayName || \"Tarea pendiente\";\n    body.appendChild(name);\n\n    const caso = document.createElement(\"div\");\n    caso.className = \"tarea-card__caso\";\n    caso.textContent = \"Caso #\" + t.caseId;\n    body.appendChild(caso);\n\n    card.appendChild(body);\n\n    const side = document.createElement(\"div\");\n    side.className = \"tarea-card__side\";\n\n    const prioridad = document.createElement(\"span\");\n    const esAlta = t.priority === \"high\" || t.priority === \"highest\";\n    prioridad.className = \"tarea-card__prioridad\" + (esAlta ? \" tarea-card__prioridad--alta\" : \"\");\n    prioridad.textContent = esAlta ? \"Alta\" : \"Normal\";\n    side.appendChild(prioridad);\n\n    if (mia) {\n      const btn = document.createElement(\"button\");\n      btn.type = \"button\";\n      btn.className = \"tarea-card__btn\";\n      btn.textContent = \"Abrir tarea\";\n      btn.addEventListener(\"click\", () => {\n        appsmith.triggerEvent(\"onAbrirTarea\", { taskId: t.id, displayName: t.displayName });\n      });\n      side.appendChild(btn);\n\n      const btnLiberar = document.createElement(\"button\");\n      btnLiberar.type = \"button\";\n      btnLiberar.className = \"tarea-card__btn tarea-card__btn--ghost\";\n      btnLiberar.textContent = \"Liberar\";\n      btnLiberar.style.marginTop = \"6px\";\n      btnLiberar.addEventListener(\"click\", () => {\n        appsmith.triggerEvent(\"onLiberar\", { taskId: t.id });\n      });\n      side.appendChild(btnLiberar);\n    } else {\n      const btnTomar = document.createElement(\"button\");\n      btnTomar.type = \"button\";\n      btnTomar.className = \"tarea-card__btn tarea-card__btn--ghost\";\n      btnTomar.textContent = \"Tomar\";\n      btnTomar.addEventListener(\"click\", () => {\n        appsmith.triggerEvent(\"onTomar\", { taskId: t.id });\n      });\n      side.appendChild(btnTomar);\n    }\n\n    card.appendChild(side);\n    list.appendChild(card);\n  });\n}\n"
+              },
+              "tags": [
+                "Display"
+              ],
+              "theme": "{{appsmith.theme}}",
+              "topRow": 0,
+              "type": "CUSTOM_WIDGET",
+              "uncompiledSrcDoc": {
+                "css": "* { box-sizing: border-box; }\nbody { margin: 0; font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; background: #F9F9F9; }\n\n.bandeja { max-width: 1120px; margin: 0 auto; padding: 26px; }\n\n.bandeja__header { margin-bottom: 18px; }\n.bandeja__title { font-size: 17px; font-weight: 700; color: #1D2751; }\n.bandeja__subtitle { margin-top: 2px; font-size: 12px; color: #4A5568; }\n\n.bandeja__kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 260px)); gap: 14px; margin-bottom: 22px; }\n\n.kpi-card {\n  background: #fff;\n  border: 1px solid #E5E7EB;\n  border-left: 4px solid transparent;\n  border-radius: 14px;\n  box-shadow: rgba(0,0,0,.1) 0px 1px 3px, rgba(0,0,0,.06) 0px 1px 2px;\n  padding: 18px 20px;\n}\n.kpi-card--total { border-left-color: #1E5FA8; }\n.kpi-card--alta { border-left-color: #F4880A; }\n\n.kpi-card__value { font-size: 28px; font-weight: 700; line-height: 1; }\n.kpi-card--total .kpi-card__value { color: #14327D; }\n.kpi-card--alta .kpi-card__value { color: #E06A00; }\n.kpi-card__label { margin-top: 4px; font-size: 10.5px; color: #4A5568; font-weight: 500; }\n\n.bandeja__list-title { font-weight: 600; font-size: 13px; color: #1D2751; margin-bottom: 12px; }\n\n.bandeja__list { display: flex; flex-direction: column; gap: 12px; }\n\n.bandeja__empty { color: #4A5568; font-size: 12px; padding: 32px 0; text-align: center; }\n\n.tarea-card {\n  display: flex;\n  background: #fff;\n  border: 1px solid #E5E7EB;\n  border-radius: 14px;\n  box-shadow: rgba(0,0,0,.1) 0px 1px 3px, rgba(0,0,0,.06) 0px 1px 2px;\n  overflow: hidden;\n}\n\n.tarea-card__body { flex: 1; padding: 16px 18px; min-width: 0; }\n\n.tarea-card__tags { display: flex; align-items: center; gap: 8px; margin-bottom: 7px; flex-wrap: wrap; }\n\n.tarea-card__tag {\n  font-weight: 700;\n  font-size: 8.5px;\n  letter-spacing: .5px;\n  color: #14327D;\n  background: rgba(30,95,168,.1);\n  padding: 3px 8px;\n  border-radius: 999px;\n  white-space: nowrap;\n}\n\n.tarea-card__name { font-weight: 600; font-size: 14.5px; color: #1D2751; }\n\n.tarea-card__caso { font-size: 10.5px; color: #9CA3AF; margin-top: 2px; }\n\n.tarea-card__side {\n  width: 190px;\n  flex-shrink: 0;\n  border-left: 1px solid #E5E7EB;\n  padding: 16px 18px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: flex-end;\n  gap: 12px;\n}\n\n.tarea-card__prioridad {\n  font-size: 9.5px;\n  font-weight: 700;\n  padding: 3px 10px;\n  border-radius: 999px;\n  background: #E8F0FE;\n  color: #2557A7;\n}\n.tarea-card__prioridad--alta { background: #FCECEC; color: #D6202A; }\n\n.tarea-card__btn {\n  background: linear-gradient(90deg, #1E5FA8 0%, #2E7BD6 100%);\n  color: #fff;\n  border: none;\n  border-radius: 999px;\n  padding: 8px 18px;\n  font-family: inherit;\n  font-size: 11px;\n  font-weight: 600;\n  cursor: pointer;\n}\n.tarea-card__btn:disabled { opacity: .4; cursor: not-allowed; }\n\n.tarea-card__btn--ghost {\n  background: #fff;\n  color: #14327D;\n  border: 1.5px solid #6FA3DC;\n}\n",
+                "html": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap\" rel=\"stylesheet\">\n\n<div class=\"bandeja\">\n  <div class=\"bandeja__header\">\n    <div class=\"bandeja__title\">Bandeja de tareas</div>\n    <div class=\"bandeja__subtitle\">Tareas de intervención humana asignadas a tu rol</div>\n  </div>\n\n  <div class=\"bandeja__kpis\">\n    <div class=\"kpi-card kpi-card--total\">\n      <div class=\"kpi-card__value\" id=\"kpi-total\">—</div>\n      <div class=\"kpi-card__label\">Total bandeja de entrada</div>\n    </div>\n    <div class=\"kpi-card kpi-card--alta\">\n      <div class=\"kpi-card__value\" id=\"kpi-alta\">—</div>\n      <div class=\"kpi-card__label\">Prioridad alta</div>\n    </div>\n  </div>\n\n  <div class=\"bandeja__list-title\">Mis tareas asignadas</div>\n  <div class=\"bandeja__list\" id=\"bandeja-list\"></div>\n  <div class=\"bandeja__empty\" id=\"bandeja-empty\" style=\"display:none\">No hay tareas asignadas en este momento.</div>\n</div>\n",
+                "js": "/* Bandeja de tareas (Custom Widget). model = { tareas: [...], userId } que\n * el layout de la página arma con bandejaLogica.tareasUnicas() +\n * bandejaLogica.esMia(t) + GetSesion.data.user_id. Las acciones Tomar/\n * Liberar/Abrir se disparan como eventos hacia el editor (igual que el\n * sidebar), donde bandejaLogica.tomar/liberar ya invocan las queries reales. */\n\nfunction tipoTag(nombre) {\n  if (!nombre) return \"TAREA\";\n  const n = nombre.toLowerCase();\n  if (n.includes(\"vip\") || n.includes(\"excepci\")) return \"REVISIÓN VIP\";\n  if (n.includes(\"gesti\") && n.includes(\"manual\")) return \"GESTIÓN MANUAL\";\n  if (n.includes(\"solicitud\") && n.includes(\"producto\")) return \"SOLICITUD DE PRODUCTO\";\n  if (n.includes(\"solicitud\") && n.includes(\"informaci\")) return \"SOLICITUD DE INFORMACIÓN\";\n  return \"TAREA\";\n}\n\nappsmith.onReady(() => {\n  render(appsmith.model);\n  if (typeof appsmith.onModelChange === \"function\") {\n    appsmith.onModelChange((m) => render(m));\n  }\n});\n\nfunction render(model) {\n  const tareas = (model && model.tareas) || [];\n  const userId = model && model.userId ? String(model.userId) : null;\n\n  const total = tareas.length;\n  const alta = tareas.filter((t) => t.priority === \"high\" || t.priority === \"highest\").length;\n\n  const kpiTotal = document.getElementById(\"kpi-total\");\n  const kpiAlta = document.getElementById(\"kpi-alta\");\n  if (kpiTotal) kpiTotal.textContent = String(total);\n  if (kpiAlta) kpiAlta.textContent = String(alta);\n\n  const list = document.getElementById(\"bandeja-list\");\n  const empty = document.getElementById(\"bandeja-empty\");\n  if (!list || !empty) return;\n\n  list.innerHTML = \"\";\n\n  if (tareas.length === 0) {\n    empty.style.display = \"block\";\n    return;\n  }\n  empty.style.display = \"none\";\n\n  tareas.forEach((t) => {\n    const mia = userId && String(t.assigned_id) === userId;\n\n    const card = document.createElement(\"div\");\n    card.className = \"tarea-card\";\n\n    const body = document.createElement(\"div\");\n    body.className = \"tarea-card__body\";\n\n    const tags = document.createElement(\"div\");\n    tags.className = \"tarea-card__tags\";\n    const tag = document.createElement(\"span\");\n    tag.className = \"tarea-card__tag\";\n    tag.textContent = tipoTag(t.displayName);\n    tags.appendChild(tag);\n    body.appendChild(tags);\n\n    const name = document.createElement(\"div\");\n    name.className = \"tarea-card__name\";\n    name.textContent = t.displayName || \"Tarea pendiente\";\n    body.appendChild(name);\n\n    const caso = document.createElement(\"div\");\n    caso.className = \"tarea-card__caso\";\n    caso.textContent = \"Caso #\" + t.caseId;\n    body.appendChild(caso);\n\n    card.appendChild(body);\n\n    const side = document.createElement(\"div\");\n    side.className = \"tarea-card__side\";\n\n    const prioridad = document.createElement(\"span\");\n    const esAlta = t.priority === \"high\" || t.priority === \"highest\";\n    prioridad.className = \"tarea-card__prioridad\" + (esAlta ? \" tarea-card__prioridad--alta\" : \"\");\n    prioridad.textContent = esAlta ? \"Alta\" : \"Normal\";\n    side.appendChild(prioridad);\n\n    if (mia) {\n      const btn = document.createElement(\"button\");\n      btn.type = \"button\";\n      btn.className = \"tarea-card__btn\";\n      btn.textContent = \"Abrir tarea\";\n      btn.addEventListener(\"click\", () => {\n        appsmith.triggerEvent(\"onAbrirTarea\", { taskId: t.id, displayName: t.displayName });\n      });\n      side.appendChild(btn);\n\n      const btnLiberar = document.createElement(\"button\");\n      btnLiberar.type = \"button\";\n      btnLiberar.className = \"tarea-card__btn tarea-card__btn--ghost\";\n      btnLiberar.textContent = \"Liberar\";\n      btnLiberar.style.marginTop = \"6px\";\n      btnLiberar.addEventListener(\"click\", () => {\n        appsmith.triggerEvent(\"onLiberar\", { taskId: t.id });\n      });\n      side.appendChild(btnLiberar);\n    } else {\n      const btnTomar = document.createElement(\"button\");\n      btnTomar.type = \"button\";\n      btnTomar.className = \"tarea-card__btn tarea-card__btn--ghost\";\n      btnTomar.textContent = \"Tomar\";\n      btnTomar.addEventListener(\"click\", () => {\n        appsmith.triggerEvent(\"onTomar\", { taskId: t.id });\n      });\n      side.appendChild(btnTomar);\n    }\n\n    card.appendChild(side);\n    list.appendChild(card);\n  });\n}\n"
+              },
+              "version": 1,
+              "widgetId": "mcbandeja01",
+              "widgetName": "bandejaContenido"
+            }
+          ]
+        }
+      }
+    ],
+    "name": "BandejaTareas",
+    "slug": "bandejatareas"
+  }
+}

@@ -18,8 +18,12 @@
   "icon": "football",
   "pages": [
     {
-      "id": "Page1",
+      "id": "BandejaTareas",
       "isDefault": true
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
